@@ -6,7 +6,7 @@ function takeANumber(line, person){
 
 function nowServing(katzDeliLine){
   while (katzDeliLine.length){
-    let first = katzDeliLine.pop()
+    let first = katzDeliLine.shift()
     return first
   }
   
