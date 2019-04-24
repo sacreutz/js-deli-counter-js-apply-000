@@ -16,10 +16,11 @@ function nowServing(katzDeliLine){
 function currentLine(line){
   let counter = 1 
   if (line.length === 0) return 'The line is currently empty.'
-  let string = 'The line is currently:  '
+  let string = 'The line is currently: '
   while (line.length){
-    string += counter + '.  ' + line.shift()
+    string += counter + '.  ' + line.shift() + ', '
     counter++
   }
+  string.splice(0, -1)
   return string
 }
