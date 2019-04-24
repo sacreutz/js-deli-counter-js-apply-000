@@ -18,9 +18,9 @@ function currentLine(line){
   if (line.length === 0) return 'The line is currently empty.'
   let string = 'The line is currently: '
   while (line.length){
-    string += counter + '.  ' + line.shift() + ', '
+    string += counter + '. ' + line.shift() + ', '
     counter++
   }
-  let string1 = string.slice(0, -1)
+  let string1 = string.slice(0, -2)
   return string1
 }
