@@ -21,6 +21,6 @@ function currentLine(line){
     string += counter + '.  ' + line.shift() + ', '
     counter++
   }
-  string.splice(0, -1)
-  return string
+  let string1 = string.splice(0, -1)
+  return string1
 }
